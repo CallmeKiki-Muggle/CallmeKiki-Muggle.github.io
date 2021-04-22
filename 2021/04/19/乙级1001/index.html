@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="1001 害死人不偿命的(3n+1)猜想 (15 分)用while循环对奇偶进行判断，当值为1时结束1234567891011121314151617181920# include&lt;iostream&gt;using namespace std;int main()&amp;#123;	int n;	int count &#x3D; 0;	cin&gt;&gt;n;	while(n&gt;1)&amp;#123;">
+<meta name="description" content="1001 害死人不偿命的(3n+1)猜想 (15 分) 题目链接：https:&#x2F;&#x2F;pintia.cn&#x2F;problem-sets&#x2F;994805260223102976&#x2F;problems&#x2F;994805325918486528  用while循环对奇偶进行判断，当值为1时结束1234567891011121314151617181920# include&lt;iostream&gt;using nam">
 <meta property="og:type" content="article">
 <meta property="og:title" content="乙级1001">
 <meta property="og:url" content="http://example.com/2021/04/19/%E4%B9%99%E7%BA%A71001/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1001 害死人不偿命的(3n+1)猜想 (15 分)用while循环对奇偶进行判断，当值为1时结束1234567891011121314151617181920# include&lt;iostream&gt;using namespace std;int main()&amp;#123;	int n;	int count &#x3D; 0;	cin&gt;&gt;n;	while(n&gt;1)&amp;#123;">
+<meta property="og:description" content="1001 害死人不偿命的(3n+1)猜想 (15 分) 题目链接：https:&#x2F;&#x2F;pintia.cn&#x2F;problem-sets&#x2F;994805260223102976&#x2F;problems&#x2F;994805325918486528  用while循环对奇偶进行判断，当值为1时结束1234567891011121314151617181920# include&lt;iostream&gt;using nam">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-19T03:02:29.000Z">
-<meta property="article:modified_time" content="2021-04-19T03:19:07.282Z">
+<meta property="article:modified_time" content="2021-04-22T08:50:44.189Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="PAT">
 <meta name="twitter:card" content="summary">
@@ -314,6 +314,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  96
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
 
           
 
@@ -330,11 +361,10 @@
       
 
       
-        <h1 id="1001-害死人不偿命的-3n-1-猜想-15-分"><a href="#1001-害死人不偿命的-3n-1-猜想-15-分" class="headerlink" title="1001 害死人不偿命的(3n+1)猜想 (15 分)"></a><strong>1001 害死人不偿命的(3n+1)猜想 (15 分)</strong></h1><h3 id="用while循环对奇偶进行判断，当值为1时结束"><a href="#用while循环对奇偶进行判断，当值为1时结束" class="headerlink" title="用while循环对奇偶进行判断，当值为1时结束"></a>用while循环对奇偶进行判断，当值为1时结束</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">while</span>(n&gt;<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">		n = n/<span class="number">2</span>;</span><br><span class="line">		count++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		n = (<span class="number">3</span>*n+<span class="number">1</span>)/<span class="number">2</span>;</span><br><span class="line">		count++;</span><br><span class="line">	&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,count);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>链接：<a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528">https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528</a></p>
+        <h1 id="1001-害死人不偿命的-3n-1-猜想-15-分"><a href="#1001-害死人不偿命的-3n-1-猜想-15-分" class="headerlink" title="1001 害死人不偿命的(3n+1)猜想 (15 分)"></a><strong>1001 害死人不偿命的(3n+1)猜想 (15 分)</strong></h1><ul>
+<li>题目链接：<a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528">https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528</a></li>
+</ul>
+<h3 id="用while循环对奇偶进行判断，当值为1时结束"><a href="#用while循环对奇偶进行判断，当值为1时结束" class="headerlink" title="用while循环对奇偶进行判断，当值为1时结束"></a>用while循环对奇偶进行判断，当值为1时结束</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">while</span>(n&gt;<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">		n = n/<span class="number">2</span>;</span><br><span class="line">		count++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		n = (<span class="number">3</span>*n+<span class="number">1</span>)/<span class="number">2</span>;</span><br><span class="line">		count++;</span><br><span class="line">	&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,count);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -526,6 +556,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">John Doe</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">629</span>
   
 </div>
 
